@@ -106,7 +106,8 @@ int main() {
         l2->push_back(i);
     }
     for (int i = 0; i < l->size(); ++i) {
-        cout << l[i] << " " << l2[i] << endl;
+        cout << (*l)[i] << " " << (*l2)[i] << endl;
+        cout << l->operator[](i) << " " << l2->operator[](i) << endl;
     }
 
     Dacia d;
