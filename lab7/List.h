@@ -20,6 +20,13 @@ public:
 };
 
 template<typename T>
+List<T> List<T>::sublist(int i, int j) {
+    List<T> l;
+    ///
+    return l;
+}
+
+template<typename T>
 void List<T>::sort(int (*compare)(T a, T b)) {
     // v[i] <=> *(v + i)
     int rez = compare(v[0], v[1]);
